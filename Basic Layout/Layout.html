@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout</title>
+    <style>
+        body
+        {
+            background: #c8e6c9;
+        }
+        #wrap
+        {
+            width: 1000px;height: 900px;margin: 0 auto; 
+            font-size: 40px; color:#fff; 
+            text-align: center; text-transform: uppercase;
+        }
+        #header
+        {
+            line-height: 100px;
+            width: 1000px; height: 100px; background: #2e7d32;
+        }
+        #nav
+        {
+            line-height: 100px;
+            width: 1000px;height: 100px; background: #388e3c;
+        }
+        #side
+        {
+            line-height: 600px; /* 문장과 문장사이 간격 한줄일때 가운데로 오는 효과가 생김 */
+            width: 300px;height: 600px; background: #43a047; float: left;
+        }
+        #contents
+        {
+            line-height: 600px;
+            width: 700px;height: 600px; background: #4caf50; float: left;
+        }
+        #footer
+        {
+            line-height: 100px;
+            width: 1000px;height: 100px; background: #66bb6a; float: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">header</div>
+        <div id="nav">nav</div>
+        <div id="side">side</div>
+        <div id="contents">contents</div>
+        <div id="footer">footer</div>   
+    </div>    
+</body>
+</html>
