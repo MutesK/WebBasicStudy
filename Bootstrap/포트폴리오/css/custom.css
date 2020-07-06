@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Nanum+Gothic&display=swap');
+
+h1, h2, h3, h4, .navbar-brand
+{
+    font-family: 'Nanum Gothic';
+    color : #1b5e20;
+}
+
+body
+{
+    font-family: 'Nanum Gothic';
+    background-color: #C8E6C9;
+}
+
+.navbar
+{
+    border-bottom: #43A047 3px solid;
+}

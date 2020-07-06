@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrick-to-fit=no">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <title>커뮤니티 사이트 예제</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row d-flex d-md-block flex-nowarp wrapper">
+            <!-- Navigation Bar (Left Side Bar)-->
+            <nav class="col-md-3 float-left col-1 pl-0 pr-0 collapse width show" id="sidebar">
+                <div class="list-group border-0 card text-center text-md-left">
+                    <a href="./index.html" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+                        <img src="./img/home.svg" alt="" style="width: 20px;">
+                        <span class="d-none d-md-inline">메인</span>
+                    </a>
+                    <a href="#usermenu" class="list-group-item d-inline-block collapsed" data-parent="#sidebar"
+                        data-toggle="collapse" aria-expanded="false">
+                        <img src="./img/user.svg" alt="" style="width: 20px;">
+                        <span class="d-none d-md-inline">회원관리</span>
+                    </a>
+                    <div class="collapse" id="usermenu">
+                        <a href="./userjoin.html" class="list-group-item" data-parent="#sidebar">회원가입</a>
+                        <a href="./userlogin.html" class="list-group-item" data-parent="#sidebar">로그인</a>
+                        <a href="./useredit.html" class="list-group-item" data-parent="#sidebar">회원정보수정</a>
+                        <a href="./userlogout.html" class="list-group-item" data-parent="#sidebar">로그아웃</a>
+                    </div>
+                    <a href="./board.html" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+                        <img src="./img/board.svg" alt="" style="width: 20px;">
+                        <span class="d-none d-md-inline">자유 게시판</span>
+                    </a>
+                    <a href="./qna.html" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+                        <img src="./img/qna.svg" alt="" style="width: 20px;">
+                        <span class="d-none d-md-inline">Q & A</span>
+                    </a>
+                    <a href="#search" class="list-group-item d-inline-block collapsed" data-parent="#sidebar"
+                        data-toggle="collapse" aria-expanded="false">
+                        <img src="./img/search.svg" alt="" style="width: 20px;">
+                        <span class="d-none d-md-inline">검색</span>
+                    </a>
+                    <div class="collapse" id="search">
+                        <div class="input-group p-2" style="background-color: #1c1c1c;">
+                            <input type="text" class="form-control" placeholder="내용을 입력하세요">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <main id="main" class="col-md-9 float-left col pl-md-5 pt-3 main">
+
+                <!-- Introduce And Carousel Images -->
+                <div class="page-header mt-3">
+                    <h2>커뮤니티 웹 사이트</h2>
+                    <p class="lead">
+                        이곳은 회원님들끼리 자유롭게 의사소통을 하며 즐길수 있는 커뮤니티 사이트입니다.
+                    </p>
+                    <hr>
+                    <button class="btn btn-success">자세히 알아보기</button>
+                    <div class="width collapse show mt-3" aria-expanded="true">
+                        <p>사이트 소개 내용을 여기에 적습니다.</p>
+                    </div>
+                    <div id="carousel" class="carousel slide" style="max-width: 1080px;" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel" data-slide-to="1"></li>
+                            <li data-target="#carousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/example1.jpeg" alt="First Slide" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/example2.jpeg" alt="First Slide" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/example3.jpeg" alt="First Slide" class="d-block w-100">
+                            </div>
+                        </div>
+
+                        <a href="#carousel" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">이전 사진</span>
+                        </a>
+                        <a href="#carousel" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">다음 사진</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 공지사항 -->
+                <section class="mt-4 mb-3 pt-4 pb-3" style="max-width: 1080px;">
+                    <p class="lead">
+                        공지사항
+                    </p>
+                    <hr>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th class="mobile" style="width: 55px; text-align:center;">번호</th>
+                                <th style="text-align:center;">제목</th>
+                                <th class="mobile" style="width: 80px; text-align:center;">작성자</th>
+                                <th class="mobile" style="width: 120px; text-align:center;">날짜</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="mobile" style="text-align: center;">3</td>
+                                <td>신규 운영자 모집</td>
+                                <td class="mobile" style="text-align: center;">운영자</td>
+                                <td class="mobile" style="text-align: center;">2020.07.06</td>
+                            </tr>
+                            <tr>
+                                <td class="mobile" style="text-align: center;">2</td>
+                                <td>커뮤니티 웹사이트에 오신것을 환영합니다.</td>
+                                <td class="mobile" style="text-align: center;">운영자</td>
+                                <td class="mobile" style="text-align: center;">2020.07.01</td>
+                            </tr>
+                            <tr>
+                                <td class="mobile" style="text-align: center;">1</td>
+                                <td>커뮤니티 웹사이트가 개설되었습니다.</td>
+                                <td class="mobile" style="text-align: center;">운영자</td>
+                                <td class="mobile" style="text-align: center;">2020.06.01</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- 구글 지도 -->
+                <section style="max-width: 1080px;">
+                    <p class="lead">정모 오시는 길</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.929170233581!2d127.06679181585105!3d37.29681247984936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5b0edb6bfc3d%3A0xb7b1e3cd2dc74b1b!2sSanghyeon%20station!5e0!3m2!1sen!2skr!4v1594016101227!5m2!1sen!2skr"
+                        width="100%" height="480px" frameborder="0" style="border:0; max-width: 1080px;"
+                        allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </section>
+
+                <!-- Footer -->
+                <footer class="text-center" style="max-width: 1080px">
+                    <p>Copyright &copy; <b>김준민</b> All Rights Reserved.</p>
+                </footer>
+            </main>
+
+        </div>
+    </div>
+
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/popper.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
