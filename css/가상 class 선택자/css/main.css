@@ -1,0 +1,32 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    transition: 1s;
+}
+
+.box:hover {
+    width: 300px;
+    background-color: royalblue;
+}
+
+
+.box:active {
+    width : 300px;
+    background-color: aliceblue;
+}
+
+/* box의 focus은 동작하지 않음. */ 
+.box:focus {
+    width : 300px;
+    background-color: darkcyan;
+}
+
+
+input {
+
+}
+
+input:focus {
+    background-color: orange;
+}
